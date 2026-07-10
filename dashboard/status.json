@@ -1,0 +1,25 @@
+{
+  "service": "ByteFlow Bot",
+  "updated_at": "2026-07-10 09:58:24",
+  "uptime_sec": 3,
+  "today": {
+    "date": "2026-07-10",
+    "users": 0,
+    "messages": 0,
+    "orders": 0,
+    "ai_sessions": 0,
+    "ai_messages": 0,
+    "errors": 0
+  },
+  "live": {
+    "active_ai_chats": 0,
+    "active_fsm_users": 0
+  },
+  "system": {
+    "cpu_percent": 0.0,
+    "ram_percent": 45.1,
+    "process_mb": 141.7
+  },
+  "last_errors": [],
+  "status": "ok"
+}
