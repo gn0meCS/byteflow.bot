@@ -73,7 +73,7 @@ DEEPSEEK_MODEL = os.getenv("DEEPSEEK_MODEL", "deepseek-v4-flash").strip()
 DEEPSEEK_API_BASE = os.getenv("DEEPSEEK_API_BASE", "https://api.deepseek.com").rstrip("/")
 DEEPSEEK_PROMPT_FILE = os.getenv(
     "DEEPSEEK_PROMPT_FILE",
-    r"c:\Users\Admin\Downloads\byteflow_deepseek_system_prompt_1.md",
+    r"byteflow_deepseek_system_prompt.md",
 ).strip()
 
 sheets_orders: GoogleSheetsOrders | None = None
