@@ -1261,7 +1261,7 @@ async def start_order_flow(message: Message, state: FSMContext) -> None:
         "<b>🛒 Оформлення замовлення ByteFlow</b>\n\n"
         "<b>Крок 1 з 5.</b> Введіть ваше <b>ім'я та прізвище</b>:\n"
         "<i>Наприклад: Олена Петренко</i>\n\n"
-        f"📎 Ваш Telegram автоматично буде додано до заявки: <b>{tg_label}</b>",
+        f"📎 Ваш Telegram автоматично буде додано до заявки",
         reply_markup=cancel_keyboard(),
     )
 
