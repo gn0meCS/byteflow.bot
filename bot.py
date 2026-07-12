@@ -138,7 +138,7 @@ SERVICE_CATALOG: dict[ServiceType, ServiceCatalogItem] = {
         key=ServiceType.TELEGRAM_BOT,
         title="Telegram-бот на aiogram",
         short_title="Telegram-бот",
-        base_cost_uah=12_000,
+        base_cost_uah=4_500,
         base_days_min=1,
         base_days_max=10,
         description=(
@@ -150,7 +150,7 @@ SERVICE_CATALOG: dict[ServiceType, ServiceCatalogItem] = {
         key=ServiceType.AI_AGENTS,
         title="Інтеграція ШІ-агентів",
         short_title="ШІ-агенти",
-        base_cost_uah=6_000,
+        base_cost_uah=2_000,
         base_days_min=2,
         base_days_max=10,
         description=(
@@ -160,9 +160,9 @@ SERVICE_CATALOG: dict[ServiceType, ServiceCatalogItem] = {
     ),
     ServiceType.WEBSITE_CRM: ServiceCatalogItem(
         key=ServiceType.WEBSITE_CRM,
-        title="Створення сайту + CRM",
-        short_title="Сайт + CRM",
-        base_cost_uah=15_000,
+        title="Створення сайту",
+        short_title="Сайт",
+        base_cost_uah=6_000,
         base_days_min=1,
         base_days_max=10,
         description=(
@@ -1092,7 +1092,7 @@ async def ai_consult_answer(message: Message, state: FSMContext) -> None:
         turn=len(history),
     )
 
-    wait_msg = await message.answer("⏳ Обробляю запит через DeepSeek...")
+    wait_msg = await message.answer("⏳ Обробляю запит")
     response = await deepseek_chat(history)
     history.append({"role": "assistant", "content": response})
     await state.update_data(ai_history=history)
